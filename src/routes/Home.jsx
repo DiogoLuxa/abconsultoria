@@ -33,12 +33,20 @@ const Home = () => {
               Contato
             </Link>
           </div>
-          <div className="img-column">
+          <div
+            className="img-column"
+            data-aos="fade-left"
+            data-aos-delay="1000"
+          >
             <img src="./images/analytics.svg" alt="analytics avatar" />
           </div>
         </SectionTwoColumns>
         <SectionTwoColumns whoFirst="img">
-          <div className="img-column">
+          <div
+            className="img-column"
+            data-aos="fade-right"
+            data-aos-delay="1000"
+          >
             <img src="./images/goingup.svg" alt="going up avatar" />
           </div>
           <div className="text-column" data-aos="fade-left">
@@ -91,7 +99,11 @@ const Home = () => {
             <h1>Soluções comerciais para o seu negócio</h1>
             <div className="line-dec"></div>
           </div>
-          <div className="services-img" data-aos="fade-up">
+          <div
+            className="services-img"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+          >
             <div className="service">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <g fill="#0E194E">
