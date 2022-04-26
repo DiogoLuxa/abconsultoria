@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 
 import Map from '../components/Map';
 import { Link } from 'react-router-dom';
@@ -8,12 +8,18 @@ import SectionTwoColumns from '../components/SectionTwoColumns';
 import HomeStyled from '../styles/Home.styled';
 import { Container } from 'react-bootstrap';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  }, []);
   return (
     <HomeStyled>
       <Container>
         <SectionTwoColumns whoFirst="text">
-          <div className="text-column">
+          <div className="text-column" data-aos="fade-right">
             <h3>AB Consultoria</h3>
             <h1>
               Nós transformamos empresas em negócios estruturados e lucrativos
@@ -35,7 +41,7 @@ const Home = () => {
           <div className="img-column">
             <img src="./images/goingup.svg" alt="going up avatar" />
           </div>
-          <div className="text-column">
+          <div className="text-column" data-aos="fade-left">
             <h4>Sobre Nós</h4>
             <h1>Consultoria com Propósito</h1>
             <div className="line-dec"></div>
@@ -80,12 +86,12 @@ const Home = () => {
           </svg>
         </div>
         <div className="services-wrapper">
-          <div className="services-text">
+          <div className="services-text" data-aos="fade-down">
             <h4>Nossos Serviços</h4>
             <h1>Soluções comerciais para o seu negócio</h1>
             <div className="line-dec"></div>
           </div>
-          <div className="services-img">
+          <div className="services-img" data-aos="fade-up">
             <div className="service">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <g fill="#0E194E">
@@ -132,7 +138,7 @@ const Home = () => {
       </section>
       <Container>
         <section className="contact">
-          <div className="contact-text">
+          <div className="contact-text" data-aos="fade-down">
             <h4>Contate-nos</h4>
             <h1>Saiba mais sobre nossas consultorias</h1>
             <div className="line-dec"></div>

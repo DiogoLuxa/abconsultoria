@@ -9,6 +9,8 @@ import Sobre from './routes/Sobre';
 import Servicos from './routes/Servicos';
 import Contato from './routes/Contato';
 
+import 'animate.css';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
