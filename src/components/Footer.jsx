@@ -22,6 +22,9 @@ const Footer = () => {
             <p>CNPJ: 12.345.678/0001-90</p>
           </div>
           <div className="footer-navbar-nav">
+            <Link to="/" className="nav-link">
+              Home
+            </Link>
             <Link to="/sobre" className="nav-link">
               Sobre
             </Link>

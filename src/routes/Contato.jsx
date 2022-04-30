@@ -2,13 +2,15 @@ import React from 'react';
 
 import { Container } from 'react-bootstrap';
 
+import ContatoStyled from '../styles/Contato.styled';
+
 const Contato = () => {
   return (
-    <div>
+    <ContatoStyled>
       <Container>
         <h1>Contato</h1>
       </Container>
-    </div>
+    </ContatoStyled>
   );
 };
 

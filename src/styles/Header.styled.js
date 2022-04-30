@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
 const HeaderStyled = styled.header`
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 3rem 0 1rem 0;
   .custom-shape-divider-top-1650812547 {
     width: 100%;
     position: absolute;
@@ -20,7 +25,6 @@ const HeaderStyled = styled.header`
       fill: #0e194e;
     }
   }
-  padding: 3rem 0;
   a {
     font-weight: 500;
     font-size: 1.1rem;

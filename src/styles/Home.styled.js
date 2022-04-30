@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const HomeStyled = styled.section`
+  padding-top: 200px;
   .services {
     position: relative;
     margin-bottom: 7rem;
