@@ -4,6 +4,8 @@ import SectionTwoColumns from '../components/SectionTwoColumns';
 import Card from '../components/Card';
 import { Container } from 'react-bootstrap';
 
+import { GiClick } from 'react-icons/gi';
+
 import SobreStyled from '../styles/Sobre.styled';
 
 const Sobre = () => {
@@ -11,6 +13,7 @@ const Sobre = () => {
   const [flipCard2, setFlipCard2] = useState(false);
 
   const setFlipOnClick = (event) => {
+    console.log(event.target.id);
     return event.target.id === 'card1'
       ? setFlipCard1(!flipCard1)
       : setFlipCard2(!flipCard2);
@@ -46,9 +49,11 @@ const Sobre = () => {
           </div>
           <div className="equipe-img">
             <Card flip={flipCard1} name={'alex'}>
-              <div className="card-container" onClick={setFlipOnClick}>
-                <div className="card-img" id="card1">
-                  <div className="img"></div>
+              <div className="card-container">
+                <div className="card-img" id="card1" onClick={setFlipOnClick}>
+                  <div className="img">
+                    <GiClick />
+                  </div>
                   <div className="back">
                     <p>
                       Alex Figer Bork cursou Ciências Econômicas e Administração
@@ -70,9 +75,11 @@ const Sobre = () => {
               </div>
             </Card>
             <Card flip={flipCard2} name={'bruno'}>
-              <div className="card-container" onClick={setFlipOnClick}>
-                <div className="card-img" id="card2">
-                  <div className="img"></div>
+              <div className="card-container">
+                <div className="card-img" id="card2" onClick={setFlipOnClick}>
+                  <div className="img">
+                    <GiClick />
+                  </div>
                   <div className="back">
                     <p>
                       Bruno Haratez Iteanu cursou Relações Internacionais na

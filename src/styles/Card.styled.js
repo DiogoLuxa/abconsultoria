@@ -12,6 +12,7 @@ const CardStyled = styled.div`
       transform-style: preserve-3d;
       .img {
         pointer-events: none;
+        position: relative;
         width: 80%;
         height: 500px;
         background-image: ${(props) => {
@@ -81,6 +82,37 @@ const CardStyled = styled.div`
             ? 'transform: rotateY(180deg) translate(-100px, 0px)'
             : 'transform: rotateY(0deg)';
         }}
+      }
+    }
+  }
+  @media (min-width: 1025px) {
+    .card-container {
+      .card-img {
+        .img {
+          svg {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .card-container {
+      .card-img {
+        .img {
+          svg {
+            border: 3px solid hsla(0, 0%, 0%, 0.5);
+            border-radius: 50px;
+            padding: 0.5rem;
+            height: 3rem;
+            width: 3rem;
+            color: hsla(0, 0%, 0%, 0.5);
+            position: absolute;
+            bottom: 50px;
+            transform: translateX(-50%);
+            left: 50%;
+          }
+        }
       }
     }
   }
