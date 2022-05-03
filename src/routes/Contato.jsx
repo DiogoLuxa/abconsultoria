@@ -72,6 +72,7 @@ const Contato = () => {
               />
               <textarea
                 name="message"
+                placeholder="Mensagem"
                 id="message"
                 cols="30"
                 rows="10"
