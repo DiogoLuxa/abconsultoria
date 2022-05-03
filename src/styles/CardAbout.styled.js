@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const CardStyled = styled.div`
+const CardAboutStyled = styled.div`
   width: 350px;
   position: relative;
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.13);
@@ -118,4 +118,4 @@ const CardStyled = styled.div`
   }
 `;
 
-export default CardStyled;
+export default CardAboutStyled;

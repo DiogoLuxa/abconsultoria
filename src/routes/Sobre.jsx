@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 
 import SectionTwoColumns from '../components/SectionTwoColumns';
-import Card from '../components/Card';
+import CardAbout from '../components/CardAbout';
 import { Container } from 'react-bootstrap';
 
 import { GiClick } from 'react-icons/gi';
@@ -48,7 +48,7 @@ const Sobre = () => {
             <div className="line-dec"></div>
           </div>
           <div className="equipe-img">
-            <Card flip={flipCard1} name={'alex'}>
+            <CardAbout flip={flipCard1} name={'alex'}>
               <div className="card-container">
                 <div className="card-img" id="card1" onClick={setFlipOnClick}>
                   <div className="img">
@@ -73,8 +73,8 @@ const Sobre = () => {
                   <p>CEO</p>
                 </div>
               </div>
-            </Card>
-            <Card flip={flipCard2} name={'bruno'}>
+            </CardAbout>
+            <CardAbout flip={flipCard2} name={'bruno'}>
               <div className="card-container">
                 <div className="card-img" id="card2" onClick={setFlipOnClick}>
                   <div className="img">
@@ -97,7 +97,7 @@ const Sobre = () => {
                   <p>CEO</p>
                 </div>
               </div>
-            </Card>
+            </CardAbout>
           </div>
         </section>
       </Container>
