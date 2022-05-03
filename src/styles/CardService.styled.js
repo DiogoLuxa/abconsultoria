@@ -7,7 +7,6 @@ const CardServiceStyled = styled.div`
   padding: 1rem;
   border-radius: 5px;
   background-color: hsla(0, 0%, 95%, 1);
-  /* transition: all 0.3s ease-in; */
   svg {
     width: 75px;
   }
