@@ -19,7 +19,7 @@ const Footer = () => {
                 AB <span>Consultoria</span>
               </h2>
             </Link>
-            <p>CNPJ: 12.345.678/0001-90</p>
+            <p>CNPJ: 01.915.371/0001-66</p>
           </div>
           <div className="footer-navbar-nav">
             <Link to="/" className="nav-link">

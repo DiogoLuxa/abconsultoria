@@ -127,6 +127,12 @@ const HomeStyled = styled.section`
         align-items: center;
         justify-content: center;
         .contact-data-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          a {
+            color: #0e194e;
+          }
           svg {
             width: 30px;
           }

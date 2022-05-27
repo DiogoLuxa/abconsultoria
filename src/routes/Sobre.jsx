@@ -12,13 +12,6 @@ const Sobre = () => {
   const [flipCard1, setFlipCard1] = useState(false);
   const [flipCard2, setFlipCard2] = useState(false);
 
-  const setFlipOnClick = (event) => {
-    console.log(event.target.id);
-    return event.target.id === 'card1'
-      ? setFlipCard1(!flipCard1)
-      : setFlipCard2(!flipCard2);
-  };
-
   return (
     <SobreStyled>
       <Container>
@@ -50,7 +43,25 @@ const Sobre = () => {
           <div className="equipe-img">
             <CardAbout flip={flipCard1} name={'alex'}>
               <div className="card-container">
-                <div className="card-img" id="card1" onClick={setFlipOnClick}>
+                <div
+                  className="card-img"
+                  id="card1"
+                  onClick={
+                    window.innerWidth >= 1440
+                      ? null
+                      : () => setFlipCard1((prev) => !prev)
+                  }
+                  onMouseEnter={
+                    window.innerWidth >= 1440
+                      ? () => setFlipCard1((prev) => !prev)
+                      : null
+                  }
+                  onMouseLeave={
+                    window.innerWidth >= 1440
+                      ? () => setFlipCard1((prev) => !prev)
+                      : null
+                  }
+                >
                   <div className="img">
                     <GiClick />
                   </div>
@@ -76,7 +87,25 @@ const Sobre = () => {
             </CardAbout>
             <CardAbout flip={flipCard2} name={'bruno'}>
               <div className="card-container">
-                <div className="card-img" id="card2" onClick={setFlipOnClick}>
+                <div
+                  className="card-img"
+                  id="card2"
+                  onClick={
+                    window.innerWidth >= 1440
+                      ? null
+                      : () => setFlipCard2((prev) => !prev)
+                  }
+                  onMouseEnter={
+                    window.innerWidth >= 1440
+                      ? () => setFlipCard2((prev) => !prev)
+                      : null
+                  }
+                  onMouseLeave={
+                    window.innerWidth >= 1440
+                      ? () => setFlipCard2((prev) => !prev)
+                      : null
+                  }
+                >
                   <div className="img">
                     <GiClick />
                   </div>
