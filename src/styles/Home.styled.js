@@ -131,7 +131,7 @@ const HomeStyled = styled.section`
           flex-direction: column;
           align-items: center;
           a {
-            color: #0e194e;
+            color: #212529;
           }
           svg {
             width: 30px;

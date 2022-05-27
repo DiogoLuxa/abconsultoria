@@ -8,7 +8,6 @@ const FooterStyled = styled.footer`
     row-gap: 1rem;
     text-align: center;
     .footer-navbar-brand {
-      /* background-color: salmon; */
       h2 {
         color: #fff;
         span {
@@ -20,13 +19,11 @@ const FooterStyled = styled.footer`
       }
     }
     .footer-navbar-nav {
-      /* background-color: aliceblue; */
       a {
         color: #fff;
       }
     }
     .footer-navbar-socials {
-      /* background-color: greenyellow; */
       display: flex;
       justify-content: center;
       align-items: center;
