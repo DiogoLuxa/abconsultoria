@@ -37,7 +37,12 @@ const Contato = () => {
             <div className="line-dec"></div>
           </div>
           <div className="contact-form" data-aos="fade-up" data-aos-delay="150">
-            <form method="POST" name="contact-form" data-netlify="true">
+            <form
+              onClick={onSubmitClick}
+              method="POST"
+              name="contact-form"
+              data-netlify="true"
+            >
               <input type="hidden" name="form-name" value="contact-form" />
               <input
                 type="text"
