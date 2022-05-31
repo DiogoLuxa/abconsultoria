@@ -171,7 +171,7 @@ const Home = () => {
                     <path d="M15 17c-2 0-8-6-8-8 0-1 2-2 2-3S6 0 5 0 0 3 0 4c0 8 12 20 20 20 1 0 4-4 4-5s-5-4-6-4-2 2-3 2z"></path>
                   </g>
                 </svg>
-                <span itemprop="telephone"></span>
+                <span itemProp="telephone"></span>
                 <a href="tel:+551121735533">+55 (11) 2173-5533</a>
               </div>
               <div className="contact-data-card">
@@ -180,7 +180,7 @@ const Home = () => {
                     <path d="M1 5v14l7-7-7-7zm22 14V5l-7 7 7 7zm-11-3l-3.5-3.5L1 20h22l-7.5-7.5L12 16zM1 4l11 11L23 4H1z"></path>
                   </g>
                 </svg>
-                <span itemprop="email"></span>
+                <span itemProp="email"></span>
                 <a href="mailto:contato@ab-consultoria.com?subject=Mais informações sobre a consultoria">
                   contato@ab-consultoria.com
                 </a>
