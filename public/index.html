@@ -56,6 +56,14 @@
 </head>
 
 <body>
+  <form name="contact-form" netlify netlify-honeypot="bot-field" action="/" hidden>
+    <input type="text" id="name" name="name" value={dataForm.name} onChange={onInputChange} />
+    <input type="email" id="email" name="email" value={dataForm.email} onChange={onInputChange} />
+    <input type="tel" id="tel" name="tel" value={dataForm.tel} onChange={onInputChange} />
+    <input type="text" id="about" name="about" value={dataForm.about} onChange={onInputChange} />
+    <textarea name="message" id="message" cols="30" rows="10" value={dataForm.message}
+      onChange={onInputChange}></textarea>
+  </form>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <!--
