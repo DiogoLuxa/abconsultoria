@@ -21,12 +21,11 @@ const Contato = () => {
   };
 
   const onSubmitClick = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     setDataForm((prevState) => {
       return { ...prevState, ...prevDataForm };
     });
   };
-  console.log(dataForm);
   return (
     <ContatoStyled>
       <Container>
