@@ -16,6 +16,7 @@ const Contato = () => {
   };
 
   const [dataForm, setDataForm] = useState(prevDataForm);
+  const [onSubmitMessage, setonSubmitMessage] = useState(false);
 
   const form = useRef();
 
@@ -42,10 +43,11 @@ const Contato = () => {
     setDataForm((prevState) => {
       return { ...prevState, ...prevDataForm };
     });
+    setonSubmitMessage(true);
   };
 
   return (
-    <ContatoStyled>
+    <ContatoStyled formSubmit={onSubmitMessage}>
       <Container>
         <div className="contact">
           <div className="contact-text" data-aos="fade-down">
@@ -67,6 +69,7 @@ const Contato = () => {
                 placeholder="Nome"
                 value={dataForm.name}
                 onChange={onInputChange}
+                required
               />
               <input
                 type="email"
@@ -75,6 +78,7 @@ const Contato = () => {
                 placeholder="Email"
                 value={dataForm.email}
                 onChange={onInputChange}
+                required
               />
               <input
                 type="tel"
@@ -83,6 +87,7 @@ const Contato = () => {
                 placeholder="Telefone"
                 value={dataForm.tel}
                 onChange={onInputChange}
+                required
               />
               <input
                 type="text"
@@ -100,11 +105,13 @@ const Contato = () => {
                 rows="10"
                 value={dataForm.message}
                 onChange={onInputChange}
+                required
               ></textarea>
 
               <button type="submit">Enviar</button>
             </form>
           </div>
+          <p className="submit-message">Mensagem enviada</p>
         </div>
       </Container>
     </ContatoStyled>

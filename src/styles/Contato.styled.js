@@ -1,10 +1,25 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const ContatoStyled = styled.div`
   /* background-color: salmon; */
   padding-top: 200px;
   margin-bottom: 7rem;
   .contact {
+    .submit-message {
+      margin-top: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: mediumseagreen;
+      opacity: 0;
+      transition: all 0.2s ease-in;
+      ${(props) => {
+        if (props.formSubmit) {
+          return css`
+            opacity: 1;
+          `;
+        }
+      }}
+    }
     /* background-color: pink; */
     text-align: center;
     .contact-text {
